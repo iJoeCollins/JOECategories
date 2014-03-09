@@ -1,9 +1,18 @@
-# JOECategories
+JOECategories
+==================
 
 This is a collection of [Foundation](/JOECategories/Foundation) and [UIKit](/JOECategories/UIKit) categories.
+ 
+At a Glance
+-----------
+Contained are several category classes
 
+- NSString+JOEAdditions
+- UIApplication+JOEAdditions
+- UIViewController+JOEAdditions
 
-## Setup
+Setup
+-----
 
 Open your terminal and run:
 
@@ -15,8 +24,20 @@ Then in your .pch file:
 
 > ```#import "JOECategories.h"```
 
+Or just import individual header files where needed.
 
-## License
+Usage
+-----
+
+Further details and examples are available in the [programming guide.](http://github.com/iJoeCollins/JOECategories/Documentation/Programming Guide.markdown)
+
+Documentation
+-------------
+
+Documentation can be [browsed online](http://developer.ijoe.co/library/JOECategories) or installed in your Xcode Organizer via the [Atom Feed URL](http://developer.ijoe.co/library/JOECategories/JOECategories.atom).
+
+License
+-------
 
 It is open source and distributed under the MIT License (MIT). That means you have to mention Joseph Collins as the original author of this code and reproduce the LICENSE text inside your app.
 

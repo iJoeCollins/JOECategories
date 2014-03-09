@@ -1,7 +1,7 @@
 //
 //  NSString+JOEAdditions.h
 //
-//  Version 1.0
+//  Version 1.0.0
 //
 //  Created by Joseph Collins on 3/7/14.
 //
@@ -33,9 +33,36 @@
 
 #import <Foundation/Foundation.h>
 
+/*! NSString+JOEAdditions category provides methods to manipulate strings in a number of ways.
+*/
+
 @interface NSString (JOEAdditions)
 
+
+///-------------------------------
+/// @name Dividing Strings
+///-------------------------------
+
+/*! Creates a new string from the receiver by removing any characters in the given set.
+ 
+    @param set The passed in character set.
+    @return    Returns an NSString object.
+*/
+
 - (NSString *)joe_stringByRemovingCharactersInSet:(NSCharacterSet *)set;
+
+
+///-------------------------------
+/// @name Replacing Substrings
+///-------------------------------
+
+/*! Creates a new string from the receiver by replacing any characters in the given set with the passed in string.
+ 
+    @param set    The given character set.
+    @param string The passed in string.
+    @return       Returns an NSString object.
+*/
+
 - (NSString *)joe_stringByReplacingCharactersInSet:(NSCharacterSet *)set withString:(NSString *)string;
 
 @end

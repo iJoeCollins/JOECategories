@@ -1,7 +1,7 @@
 //
 //  JOECategories.h
 //
-//  Version 1.0
+//  Version 1.0.0
 //
 //  Created by Joseph Collins on 3/7/14.
 //
@@ -36,6 +36,8 @@
 
 // UIKit
 #if TARGET_OS_IPHONE
-    #import "UIApplication+JOEAdditions.h"
-    #import "UIViewController+JOEAdditions.h"
+
+#import "UIApplication+JOEAdditions.h"
+#import "UIViewController+JOEAdditions.h"
+
 #endif

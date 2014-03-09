@@ -1,7 +1,7 @@
 //
 //  NSString+JOEAdditions.m
 //
-//  Version 1.0
+//  Version 1.0.0
 //
 //  Created by Joseph Collins on 3/7/14.
 //
@@ -35,11 +35,15 @@
 
 @implementation NSString (JOEAdditions)
 
+#pragma mark - Dividing Strings
+
 - (NSString *)joe_stringByRemovingCharactersInSet:(NSCharacterSet *)set
 {
     return [self joe_stringByReplacingCharactersInSet:set withString:@""];
 }
 
+
+#pragma mark - Replacing Substrings
 
 - (NSString *)joe_stringByReplacingCharactersInSet:(NSCharacterSet *)set withString:(NSString *)string
 {

@@ -6,7 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D8AF131F18CA7E0E00F5ABB1 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D8AF132618CA7E0F00F5ABB1 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				D8AF131E18CA7E0E00F5ABB1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		D8993F5318CBE4A1009139F7 /* UIViewController+JOEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8993F5218CBE4A1009139F7 /* UIViewController+JOEAdditions.m */; };
 		D8AF126A18CA45F500F5ABB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AF126918CA45F500F5ABB1 /* Foundation.framework */; };
 		D8AF126C18CA45F500F5ABB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AF126B18CA45F500F5ABB1 /* CoreGraphics.framework */; };
 		D8AF126E18CA45F500F5ABB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AF126D18CA45F500F5ABB1 /* UIKit.framework */; };
@@ -17,17 +32,12 @@
 		D8AF129A18CA45F500F5ABB1 /* JOECategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF129918CA45F500F5ABB1 /* JOECategoriesTests.m */; };
 		D8AF12B018CA463A00F5ABB1 /* NSString+JOEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF12AA18CA463A00F5ABB1 /* NSString+JOEAdditions.m */; };
 		D8AF12B118CA463A00F5ABB1 /* UIApplication+JOEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF12AD18CA463A00F5ABB1 /* UIApplication+JOEAdditions.m */; };
-		D8AF12B218CA463A00F5ABB1 /* UIViewController+JOEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF12AF18CA463A00F5ABB1 /* UIViewController+JOEAdditions.m */; };
 		D8AF12C218CA467000F5ABB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF12B518CA467000F5ABB1 /* AppDelegate.m */; };
 		D8AF12C318CA467000F5ABB1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AF12B618CA467000F5ABB1 /* Main_iPad.storyboard */; };
 		D8AF12C418CA467000F5ABB1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AF12B818CA467000F5ABB1 /* Main_iPhone.storyboard */; };
-		D8AF12C518CA467000F5ABB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8AF12BA18CA467000F5ABB1 /* InfoPlist.strings */; };
 		D8AF12C618CA467000F5ABB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AF12BC18CA467000F5ABB1 /* Images.xcassets */; };
-		D8AF12C718CA467000F5ABB1 /* JOECategories-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8AF12BD18CA467000F5ABB1 /* JOECategories-Info.plist */; };
 		D8AF12C818CA467000F5ABB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF12BF18CA467000F5ABB1 /* main.m */; };
 		D8AF12C918CA467000F5ABB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF12C118CA467000F5ABB1 /* ViewController.m */; };
-		D8AF12E218CA512F00F5ABB1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D8AF12E018CA512F00F5ABB1 /* LICENSE */; };
-		D8AF12E318CA512F00F5ABB1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D8AF12E118CA512F00F5ABB1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8993F5118CBE4A1009139F7 /* UIViewController+JOEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JOEAdditions.h"; sourceTree = "<group>"; };
+		D8993F5218CBE4A1009139F7 /* UIViewController+JOEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JOEAdditions.m"; sourceTree = "<group>"; };
 		D8AF126618CA45F500F5ABB1 /* JOECategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JOECategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AF126918CA45F500F5ABB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8AF126B18CA45F500F5ABB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,8 +66,6 @@
 		D8AF12AA18CA463A00F5ABB1 /* NSString+JOEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JOEAdditions.m"; sourceTree = "<group>"; };
 		D8AF12AC18CA463A00F5ABB1 /* UIApplication+JOEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JOEAdditions.h"; sourceTree = "<group>"; };
 		D8AF12AD18CA463A00F5ABB1 /* UIApplication+JOEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JOEAdditions.m"; sourceTree = "<group>"; };
-		D8AF12AE18CA463A00F5ABB1 /* UIViewController+JOEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JOEAdditions.h"; sourceTree = "<group>"; };
-		D8AF12AF18CA463A00F5ABB1 /* UIViewController+JOEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JOEAdditions.m"; sourceTree = "<group>"; };
 		D8AF12B418CA467000F5ABB1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8AF12B518CA467000F5ABB1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8AF12B718CA467000F5ABB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
@@ -68,8 +78,11 @@
 		D8AF12C018CA467000F5ABB1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D8AF12C118CA467000F5ABB1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D8AF12CF18CA478000F5ABB1 /* JOECategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOECategories.h; sourceTree = "<group>"; };
-		D8AF12E018CA512F00F5ABB1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D8AF12E118CA512F00F5ABB1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D8AF132118CA7E0F00F5ABB1 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		D8AF132218CA7E0F00F5ABB1 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Programming Guide-template.markdown"; path = "Documentation/Programming Guide-template.markdown"; sourceTree = "<group>"; };
+		D8AF132318CA7E0F00F5ABB1 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Setup Guide-template.markdown"; path = "Documentation/Setup Guide-template.markdown"; sourceTree = "<group>"; };
+		D8AF132418CA7E0F00F5ABB1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D8AF132518CA7E0F00F5ABB1 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +114,8 @@
 			children = (
 				D8AF126F18CA45F500F5ABB1 /* JOECategories */,
 				D8AF12B318CA467000F5ABB1 /* Demo */,
-				D8AF12DF18CA50EC00F5ABB1 /* Documentation */,
 				D8AF129318CA45F500F5ABB1 /* JOECategoriesTests */,
+				D8AF132018CA7E0F00F5ABB1 /* Documentation */,
 				D8AF126818CA45F500F5ABB1 /* Frameworks */,
 				D8AF126718CA45F500F5ABB1 /* Products */,
 			);
@@ -170,8 +183,8 @@
 			children = (
 				D8AF12AC18CA463A00F5ABB1 /* UIApplication+JOEAdditions.h */,
 				D8AF12AD18CA463A00F5ABB1 /* UIApplication+JOEAdditions.m */,
-				D8AF12AE18CA463A00F5ABB1 /* UIViewController+JOEAdditions.h */,
-				D8AF12AF18CA463A00F5ABB1 /* UIViewController+JOEAdditions.m */,
+				D8993F5118CBE4A1009139F7 /* UIViewController+JOEAdditions.h */,
+				D8993F5218CBE4A1009139F7 /* UIViewController+JOEAdditions.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -234,13 +247,24 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		D8AF12DF18CA50EC00F5ABB1 /* Documentation */ = {
+		D8AF132018CA7E0F00F5ABB1 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				D8AF12E018CA512F00F5ABB1 /* LICENSE */,
-				D8AF12E118CA512F00F5ABB1 /* README.md */,
+				D8AF132118CA7E0F00F5ABB1 /* AppledocSettings.plist */,
+				D8AF132918CA82EB00F5ABB1 /* Programming Guides */,
+				D8AF132418CA7E0F00F5ABB1 /* LICENSE */,
+				D8AF132518CA7E0F00F5ABB1 /* Readme.markdown */,
 			);
 			name = Documentation;
+			sourceTree = "<group>";
+		};
+		D8AF132918CA82EB00F5ABB1 /* Programming Guides */ = {
+			isa = PBXGroup;
+			children = (
+				D8AF132218CA7E0F00F5ABB1 /* Programming Guide-template.markdown */,
+				D8AF132318CA7E0F00F5ABB1 /* Setup Guide-template.markdown */,
+			);
+			name = "Programming Guides";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +334,7 @@
 			targets = (
 				D8AF126518CA45F500F5ABB1 /* JOECategories */,
 				D8AF128B18CA45F500F5ABB1 /* JOECategoriesTests */,
+				D8AF131F18CA7E0E00F5ABB1 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -319,12 +344,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8AF12E218CA512F00F5ABB1 /* LICENSE in Resources */,
-				D8AF12C718CA467000F5ABB1 /* JOECategories-Info.plist in Resources */,
 				D8AF12C418CA467000F5ABB1 /* Main_iPhone.storyboard in Resources */,
-				D8AF12E318CA512F00F5ABB1 /* README.md in Resources */,
 				D8AF12C618CA467000F5ABB1 /* Images.xcassets in Resources */,
-				D8AF12C518CA467000F5ABB1 /* InfoPlist.strings in Resources */,
 				D8AF12C318CA467000F5ABB1 /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +360,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8AF131E18CA7E0E00F5ABB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\ncd \"${BUILD_DIR}/Documentation/\"\ncp -fR \"publish/\" \"/Users/Joe/Work/iJoe.Co/Development/Library/${PROJECT_NAME}\"\ncd \"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\ncp -fR \"Documents/\" \"/Users/Joe/Work/iJoe.Co/Development/Library/${PROJECT_NAME}\"\ncd \"/Users/Joe/Work/iJoe.Co/Development/Library/${PROJECT_NAME}\"\nopen -a Finder .";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8AF126218CA45F500F5ABB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -347,7 +384,7 @@
 				D8AF12C918CA467000F5ABB1 /* ViewController.m in Sources */,
 				D8AF12C818CA467000F5ABB1 /* main.m in Sources */,
 				D8AF12C218CA467000F5ABB1 /* AppDelegate.m in Sources */,
-				D8AF12B218CA463A00F5ABB1 /* UIViewController+JOEAdditions.m in Sources */,
+				D8993F5318CBE4A1009139F7 /* UIViewController+JOEAdditions.m in Sources */,
 				D8AF12B018CA463A00F5ABB1 /* NSString+JOEAdditions.m in Sources */,
 				D8AF12B118CA463A00F5ABB1 /* UIApplication+JOEAdditions.m in Sources */,
 			);
@@ -551,6 +588,20 @@
 			};
 			name = Release;
 		};
+		D8AF132718CA7E0F00F5ABB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8AF132818CA7E0F00F5ABB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,6 +628,15 @@
 			buildConfigurations = (
 				D8AF12A518CA45F500F5ABB1 /* Debug */,
 				D8AF12A618CA45F500F5ABB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8AF132618CA7E0F00F5ABB1 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8AF132718CA7E0F00F5ABB1 /* Debug */,
+				D8AF132818CA7E0F00F5ABB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

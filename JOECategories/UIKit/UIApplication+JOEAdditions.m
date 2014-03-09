@@ -1,7 +1,7 @@
 //
 //  UIApplication+JOEAdditions.m
 //
-//  Version 1.0
+//  Version 1.0.0
 //
 //  Created by Joseph Collins on 2/19/14.
 //
@@ -33,9 +33,11 @@
 
 #import "UIApplication+JOEAdditions.h"
 
-NSString *const kJOEFirstRunKey = @"kJOEFirstRunKey";
+static NSString *const kJOEFirstRunKey = @"kJOEFirstRunKey";
 
 @implementation UIApplication (JOEAdditions)
+
+#pragma mark - Managing First Launch
 
 - (BOOL)joe_isFirstRun
 {
@@ -45,6 +47,7 @@ NSString *const kJOEFirstRunKey = @"kJOEFirstRunKey";
     
     return YES;
 }
+
 
 - (void)joe_endFirstRun
 {

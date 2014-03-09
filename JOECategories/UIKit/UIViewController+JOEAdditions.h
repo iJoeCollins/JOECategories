@@ -1,7 +1,7 @@
 //
 //  UIViewController+JOEAdditions.h
 //
-//  Version 1.0
+//  Version 1.0.0
 //
 //  Created by Joseph Collins on 2/11/14.
 //
@@ -33,9 +33,29 @@
 
 #import <UIKit/UIKit.h>
 
+/*! Category on UIViewController providing numerous methods to make things such as instantiating view controllers from the storyboard easier.
+*/
+
 @interface UIViewController (JOEAdditions)
 
+
+///------------------------------------
+/// @name Initializing From Storyboard
+///------------------------------------
+
+/*! This method grabs an instance of the initial view controller set in a storyboard.
+
+    @return Returns an instance of the initial view controller.
+*/
+
 + (instancetype)joe_initialController;
+
+/*! This method grabs an instance of the controller with the passed in identifier set in a storyboard.
+ 
+    @param identifier The identifier value set in Interface Builder.
+    @return           Returns an instance of the controller with the passed in identifier.
+*/
+
 + (instancetype)joe_controllerWithIdentifier:(NSString *)identifier;
 
 @end

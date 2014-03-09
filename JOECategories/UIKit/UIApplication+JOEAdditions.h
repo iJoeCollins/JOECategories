@@ -1,7 +1,7 @@
 //
 //  UIApplication+JOEAdditions.h
 //
-//  Version 1.0
+//  Version 1.0.0
 //
 //  Created by Joseph Collins on 2/19/14.
 //
@@ -33,11 +33,29 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *const kJOEFirstRunKey;
+/*! This category provides convenient methods useful for the UIApplication class.
+*/
 
 @interface UIApplication (JOEAdditions)
 
+
+///-------------------------------
+/// @name Managing First Launch
+///-------------------------------
+
+/*! Checks if it is the very first launch of an application implying a new user.
+ 
+    @return Returns YES if it is indeed the first launch, otherwise NO.
+*/
+
 - (BOOL)joe_isFirstRun;
+
+/*! This method should be called at some point to end the first run.
+
+    It checks if it is the first run, and then sets a first run key
+    and synchronizes the application defaults.
+*/
+
 - (void)joe_endFirstRun;
 
 @end
