@@ -29,7 +29,7 @@ Or just import individual header files where needed.
 Usage
 -----
 
-Further details and examples are available in the [programming guide.](http%3A%2F%2Fgithub.com%2FiJoeCollins%2FJOECategories%2FDocumentation%2FProgramming%20Guide.markdown)
+Further details and examples are available in the [programming guide.](http://github.com/iJoeCollins/JOECategories/Documentation/Programming Guide.markdown)
 
 Documentation
 -------------
@@ -41,6 +41,6 @@ License
 
 It is open source and distributed under the MIT License (MIT). That means you have to mention Joseph Collins as the original author of this code and reproduce the LICENSE text inside your app.
 
-You can purchase a [Non-Attribution-License](mailto%3Ajoe%40ijoe.co%3Fsubject%3DJOECategories%20Non-Attribution-License) for $100 USD, for not having to include the LICENSE text.
+You can purchase a [Non-Attribution-License](mailto:joe@ijoe.co?subject=JOECategories Non-Attribution-License) for $100 USD, for not having to include the LICENSE text.
 
-I also accept sponsorship for any specific enhancements you may require. Please [contact me via email](mailto%3Ajoe%40ijoe.co%3Fsubject%3DJOECategories%20Sponsorship) for inquiries.
+I also accept sponsorship for any specific enhancements you may require. Please [contact me via email](mailto:joe@ijoe.co?subject=JOECategories Sponsorship) for inquiries.
