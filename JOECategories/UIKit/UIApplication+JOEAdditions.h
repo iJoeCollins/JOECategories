@@ -50,10 +50,10 @@
 
 - (BOOL)joe_isFirstRun;
 
-/*! This method should be called at some point to end the first run.
-
-    It checks if it is the first run, and then sets a first run key
+/*! It checks if it is the first run, and then sets a first run key
     and synchronizes the application defaults.
+ 
+    @discussion This method should be called at some point to end the first run.
 */
 
 - (void)joe_endFirstRun;
