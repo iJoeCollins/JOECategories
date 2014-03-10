@@ -1,5 +1,5 @@
 Setup Guide
-===========
+-----------
 
 Open your terminal and run:
 
@@ -11,4 +11,4 @@ Then in your .pch file:
 
 > ```#import "JOECategories.h"```
 
-Or just import individual header files where needed.
+Or just import the header files where needed.
