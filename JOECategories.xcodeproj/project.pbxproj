@@ -195,8 +195,8 @@
 				D8AF12CA18CA467A00F5ABB1 /* Application Delegate */,
 				D8AF12CE18CA46B800F5ABB1 /* View Controllers */,
 				D8AF12CB18CA468500F5ABB1 /* Storyboards */,
-				D8AF12CC18CA469A00F5ABB1 /* Supporting Files */,
 				D8AF12CD18CA46AE00F5ABB1 /* Resources */,
+				D8AF12CC18CA469A00F5ABB1 /* Supporting Files */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
