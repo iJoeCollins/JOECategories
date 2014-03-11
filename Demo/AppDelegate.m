@@ -7,12 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "JOECategories.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    if ([application joe_isFirstRun]) {
+        // Give an introduction
+        ViewController *viewController = [UIViewController joe_initialController];
+        
+        // End first run.
+        [[UIApplication sharedApplication] joe_endFirstRun];
+    }
+    
     return YES;
 }
 							
