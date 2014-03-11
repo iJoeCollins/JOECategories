@@ -1,12 +1,23 @@
 Programming Guide
 -----------------
 
-UIKit
------
+This programming guide serves as a reference on how to go about using the included api.  It is divided into UIKit and Foundation categories and shows examples for each addition.
 
-### UIApplication+JOEAdditions
+UIKit Categories
+----------------
 
-#### Checking if it is the first run
+Contains:
+
+[UIApplication+JOEAdditions](#UIApplication)
+
+[UIViewController+JOEAdditions](#UIViewController)
+
+
+<a name="UIApplication"></a>
+UIApplication+JOEAdditions
+--------------------------
+
+### Checking if it is the first run
 
 Usually inside your application delegate.
 
@@ -23,7 +34,7 @@ Usually inside your application delegate.
 }
 ```
 
-#### Ending the first run sequence
+### Ending the first run sequence
 
 You should call joe_endFirstRun at some point. This can be at the end of a tutorial, introduction, or setup process.
 
@@ -32,9 +43,11 @@ You should call joe_endFirstRun at some point. This can be at the end of a tutor
 ```
 
 
-### UIViewController+JOEAdditions
+<a name="UIViewController"></a>
+UIViewController+JOEAdditions
+-----------------------------
 
-#### Get the initial view controller from a storyboard
+### Get the initial view controller from a storyboard
 
 This makes the app delegate a ton cleaner by factoring out boilerplate code.
 Now you just have to use:
@@ -43,9 +56,9 @@ Now you just have to use:
 ViewController *viewController = [UIViewController joe_initialController];
 ```
 
-@warning The methods dealing with storyboards use the default names. Either Main, Main_iPhone, or Main_iPad.
+**Important:** The methods dealing with storyboards use the default names. Either Main, Main_iPhone, or Main_iPad.
 
-#### Initialize a view controller from a storyboard using its identifier
+### Initialize a view controller from a storyboard using its identifier
 
 Again this makes things cleaner by removing factoring out the boilerplate code.
 
@@ -54,12 +67,19 @@ ViewController *viewController = [UIViewController joe_controllerWithIdentifier:
 ```
 
 
-Foundation
-----------
+Foundation Categories
+---------------------
 
-### NSString+JOEAdditions
+Contains:
 
-#### Dividing Strings
+[NSString+JOEAdditions](#NSString)
+
+
+<a name="NSString"></a>
+NSString+JOEAdditions
+---------------------
+
+### Dividing Strings
 
 To create a new string from the receiver by removing characters in a set
 
@@ -69,7 +89,7 @@ NSString *cleanString = [@"$3.00" joe_stringByRemovingCharactersInSet:[[NSCharac
 
 This turns $3.00 into its mantissa 300 with exponent -2. Great when working with currency and decimal numbers.
 
-#### Replacing Substrings
+### Replacing Substrings
 
 To create a new string by replacing any characters in the given set with a passed string.
 
