@@ -78,11 +78,11 @@
 		D8AF12C018CA467000F5ABB1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D8AF12C118CA467000F5ABB1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D8AF12CF18CA478000F5ABB1 /* JOECategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOECategories.h; sourceTree = "<group>"; };
-		D8AF132118CA7E0F00F5ABB1 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
 		D8AF132218CA7E0F00F5ABB1 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Programming Guide-template.markdown"; path = "Documentation/Programming Guide-template.markdown"; sourceTree = SOURCE_ROOT; };
 		D8AF132318CA7E0F00F5ABB1 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Setup Guide-template.markdown"; path = "Documentation/Setup Guide-template.markdown"; sourceTree = SOURCE_ROOT; };
 		D8AF132418CA7E0F00F5ABB1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D8AF132518CA7E0F00F5ABB1 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		D8FAF89C18E604FD00BF2B5D /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = Documentation/AppledocSettings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +250,7 @@
 		D8AF132018CA7E0F00F5ABB1 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				D8AF132118CA7E0F00F5ABB1 /* AppledocSettings.plist */,
+				D8FAF89C18E604FD00BF2B5D /* AppledocSettings.plist */,
 				D8AF132918CA82EB00F5ABB1 /* Programming Guides */,
 				D8AF132418CA7E0F00F5ABB1 /* LICENSE */,
 				D8AF132518CA7E0F00F5ABB1 /* Readme.markdown */,
@@ -372,7 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/iJoe.Co Developer/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"'$DESTINATION_DIR'\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
+			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/iJoe.Co Developer/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"'$DESTINATION_DIR'\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -554,7 +554,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECategories/JOECategories-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOECategories-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -576,7 +576,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECategories/JOECategories-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOECategories-Prefix.pch";
 				INFOPLIST_FILE = "JOECategoriesTests/JOECategoriesTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

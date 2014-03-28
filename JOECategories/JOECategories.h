@@ -1,7 +1,7 @@
 //
 //  JOECategories.h
 //
-//  Version 1.0.0
+//  Version 0.2.0
 //
 //  Created by Joseph Collins on 3/7/14.
 //

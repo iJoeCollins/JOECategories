@@ -98,7 +98,7 @@ This makes the app delegate a ton cleaner by factoring out boilerplate code.
 Now you just have to use:
 
 ```
-ViewController *viewController = [UIViewController joe_initialController];
+ViewController *viewController = [ViewController joe_initialViewController];
 ```
 
 **Important:** The methods dealing with storyboards use the default names. Either Main, Main_iPhone, or Main_iPad.
@@ -108,5 +108,5 @@ ViewController *viewController = [UIViewController joe_initialController];
 Again this makes things cleaner by removing factoring out the boilerplate code.
 
 ```
-ViewController *viewController = [UIViewController joe_controllerWithIdentifier:@"ViewController"];
+ViewController *viewController = [UIViewController joe_viewControllerWithIdentifier:@"ViewController"];
 ```
