@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)endFirstRun:(id)sender;
+- (IBAction)resetFirstRun:(id)sender;
 
 @end
 
@@ -24,6 +26,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)endFirstRun:(id)sender {
+    // End first run.
+    [[UIApplication sharedApplication] joe_endFirstRun];
+}
+
+- (IBAction)resetFirstRun:(id)sender {
+    // Reset first run.
+    [[UIApplication sharedApplication] joe_resetFirstRun];
 }
 
 @end

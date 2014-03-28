@@ -1,7 +1,7 @@
 //
 //  UIApplication+JOEAdditions.h
 //
-//  Version 1.0.0
+//  Version 0.2.0
 //
 //  Created by Joseph Collins on 2/19/14.
 //
@@ -57,5 +57,12 @@
 */
 
 - (void)joe_endFirstRun;
+
+/*! Checks if the first run key is present and removes it.
+ 
+    @discussion This method can be called by the user to bring back any intro material to view on launch.
+*/
+
+- (void)joe_resetFirstRun;
 
 @end

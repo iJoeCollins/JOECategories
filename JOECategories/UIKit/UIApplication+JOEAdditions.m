@@ -1,7 +1,7 @@
 //
 //  UIApplication+JOEAdditions.m
 //
-//  Version 1.0.0
+//  Version 0.2.0
 //
 //  Created by Joseph Collins on 2/19/14.
 //
@@ -53,6 +53,15 @@ static NSString *const kJOEFirstRunKey = @"kJOEFirstRunKey";
 {
     if ([self joe_isFirstRun]) {
         [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:kJOEFirstRunKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
+
+
+- (void)joe_resetFirstRun
+{
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:kJOEFirstRunKey]) {
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:kJOEFirstRunKey];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }

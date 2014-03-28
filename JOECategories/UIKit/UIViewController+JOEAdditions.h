@@ -1,7 +1,7 @@
 //
 //  UIViewController+JOEAdditions.h
 //
-//  Version 1.0.0
+//  Version 0.2.0
 //
 //  Created by Joseph Collins on 2/11/14.
 //
@@ -48,7 +48,7 @@
     @return Returns an instance of the initial view controller.
 */
 
-+ (instancetype)joe_initialController;
++ (instancetype)joe_initialViewController;
 
 /*! This method grabs an instance of the controller with the passed in identifier set in a storyboard.
  
@@ -56,6 +56,6 @@
     @return           Returns an instance of the controller with the passed in identifier.
 */
 
-+ (instancetype)joe_controllerWithIdentifier:(NSString *)identifier;
++ (instancetype)joe_viewControllerWithIdentifier:(NSString *)identifier;
 
 @end

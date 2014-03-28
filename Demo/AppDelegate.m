@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "JOECategories.h"
 
 @implementation AppDelegate
@@ -18,11 +17,15 @@
     
     if ([application joe_isFirstRun]) {
         // Give an introduction
-        ViewController *viewController = [UIViewController joe_initialController];
-        
-        // End first run.
-        [[UIApplication sharedApplication] joe_endFirstRun];
+        self.viewController = [ViewController joe_initialViewController];
+    } else {
+        self.viewController = [ViewController joe_viewControllerWithIdentifier:@"ViewController"];
     }
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:self.viewController];
+    [self.window makeKeyAndVisible];
+
     
     return YES;
 }

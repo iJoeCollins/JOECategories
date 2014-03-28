@@ -1,7 +1,7 @@
 //
 //  UIViewController+JOEAdditions.m
 //
-//  Version 1.0.0
+//  Version 0.2.0
 //
 //  Created by Joseph Collins on 2/11/14.
 //
@@ -37,7 +37,7 @@
 
 #pragma mark - Initializing From Storyboard
 
-+ (instancetype)joe_initialController
++ (instancetype)joe_initialViewController
 {
     UIStoryboard *storyboard = nil;
     
@@ -53,7 +53,7 @@
 }
 
 
-+ (instancetype)joe_controllerWithIdentifier:(NSString *)identifier
++ (instancetype)joe_viewControllerWithIdentifier:(NSString *)identifier
 {
     UIStoryboard *storyboard = nil;
     
