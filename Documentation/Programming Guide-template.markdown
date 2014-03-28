@@ -87,6 +87,14 @@ You should call joe_endFirstRun at some point. This can be at the end of a tutor
 [[UIApplication sharedApplication] joe_endFirstRun];
 ```
 
+### Reset the first run sequence
+
+This method can be called by the user to bring back the intro material to view on launch.
+
+```
+[[UIApplication sharedApplication] joe_resetFirstRun];
+```
+
 
 <a name="UIViewController"></a>
 UIViewController+JOEAdditions
