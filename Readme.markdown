@@ -3,7 +3,7 @@ Abstract
 
 This is a collection of Foundation and UIKit categories.
 
-Containes:
+Contains:
 
 - NSString+JOEAdditions
 - UIApplication+JOEAdditions
